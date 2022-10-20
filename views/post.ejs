@@ -1,0 +1,7 @@
+<%- include("partials/header") %>
+
+    <h1>  <%= requestedPost.title %>  </h1>
+    <% postContent = requestedPost.content.replace(/\n/g, '<br>\n') %> 
+    <p> <%- postContent %> </p>
+
+<%- include("partials/footer") %>
